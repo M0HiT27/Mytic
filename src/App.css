@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  background: linear-gradient(to right , #00AAFF , #00FF6C);
+}
+.ticTacGrid{
+  display: grid;
+  grid-template-columns: repeat(3,8rem);
+  grid-template-rows: minmax(7rem,auto) repeat(5,6rem);
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  
+  
+}
+.ticTacGrid > button:hover , .ticTacGrid > button:focus{
+  background-color: rgba(255,255,255,0.9)
+}
+.ticTacGrid > button{
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.75);
+  outline: none;
+  border:1px solid white;
+  font-size: 2rem;
+}
+.ticTacGrid > .newGameButton {
+  grid-column: -1/1;
+}
+.ticTacGrid > .display{
+  grid-column: span 3;
+  background-color: rgba(255,255,255,0.75);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
